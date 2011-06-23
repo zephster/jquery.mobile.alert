@@ -1,0 +1,64 @@
+/* alert dialog */
+.ui-alert-in {
+    -webkit-animation-name: ui-alert-open;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 500ms;
+}
+.ui-alert-out {
+    -webkit-animation-name: ui-alert-close;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 500ms;
+}
+@-webkit-keyframes ui-alert-open {
+    from {
+        -webkit-transform: scale(.2);
+        opacity: 0;
+    } to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes ui-alert-close {
+    from {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    } to {
+        -webkit-transform: scale(.2);
+        opacity: 0;
+    }
+}
+#ui-alert-bg {
+    display: none;
+    background-color: black; 
+    opacity: .3;
+    position: absolute;
+    top:0;
+    left: 0;
+    min-height: 100%; 
+    height: auto;
+    width: 100%;
+    z-index: 19;
+}
+#ui-alert-content {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    color: #fff;
+    border: 3px solid #fff;
+    text-align: center;
+    display: none;
+    height: auto;
+    position: absolute;
+    width: 230px;
+    padding: 0 5px 0 5px;
+    z-index: 20;
+    -moz-box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    -webkit-box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    box-shadow: 0px 0px 12px rgba(0,0,0,.6);
+    text-shadow: 0 -1px 1px #000;
+    background-image: -moz-linear-gradient(top, #C46C56 0%, #C54B2C 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C46C56), color-stop(100%,#C54B2C));
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C46C56', EndColorStr='#C54B2C')";
+}
