@@ -1,7 +1,11 @@
 jQuery Mobile friendly Alert Dialog
 by Brandon <antizeph@gmail.com>
 
+6/27/2011 - bug fix
+
 I made this quick and dirty script for a work project but I thought it could be useful to others.
+I use it as success/error notifications with modal mode disabled, like "Successfully added to cart" or "Error blahing the blah".
+
 Please tell me how badly this thing is made, I'll gladly commit anything that makes it better!
 
 
@@ -11,7 +15,7 @@ To call up an alert dialog:
 *note: the title is not currently being used, but I put it there to support one if needed*
 
 Modal mode is on by default (dimming background).
-To disable: $.mobile.modal = false; (in mobileinit bind for global setting)
+To disable: $.mobile.modal = false; (in mobileinit bind for global setting; I'd like to have it be $.mobile.alert.modal instead.)
 
 -----
 This program is free software: you can redistribute it and/or modify
